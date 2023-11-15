@@ -39,7 +39,7 @@ var db *sql.DB
 
 func main() {
 	var err error
-	db, err = sql.Open("mysql", "root:Jhonrhey#123@tcp(localhost:3306)/gocrud")
+	db, err = sql.Open("mysql", "root:Jhonrhey#123@tcp(127.0.0.1:3306)/gocrud")
 	if err != nil {
 		log.Fatal(err)
 	}
